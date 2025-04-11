@@ -9,9 +9,12 @@ Realizar o pré-processamento de instâncias do problema logístico com grafos d
 ## 📂 Estrutura do Projeto
 
 TrabalhoPratico/
-├── Instacias no formato  (.dat)              
+├── Instacias no formato  (.dat)   
+
 ├── teste_uso.py             # Código com leitura e estatísticas do grafo
+
 ├── visualizacao_algoritmo.ipynb  # Notebook separado com execução/importação
+
 ├── README.md                    # Explicação do projeto
 
 
