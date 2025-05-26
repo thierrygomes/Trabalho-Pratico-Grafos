@@ -10,12 +10,6 @@ Realizar o pré-processamento de instâncias do problema logístico com grafos d
 
 ---
 
-## 📂 Estrutura do Projeto
-
-A organização do projeto segue a seguinte estrutura de diretórios e arquivos:
-
----
-
 ## 🎯 Objetivo
 
 Realizar o pré-processamento de instâncias do problema logístico com grafos direcionados e não-direcionados, implementando a leitura dos dados e cálculo de estatísticas estruturais do grafo.
