@@ -1,11 +1,18 @@
 import heapq
 from collections import defaultdict, deque
+import sys # Importa o módulo sys
 
 #leitura do arquivo.
 # O arquivo deve estar no mesmo diretório do script ou fornecer o caminho completo.
 # O arquivo deve conter as informações no formato especificado.
-# O arquivo deve ser mudado manualmente para o nome desejado.
-arquivo = 'CBMix12.dat'
+# O nome do arquivo será passado como argumento na linha de comando.
+# lembre-se de digitar o caminho completo do arquivo, caso não esteja no mesmo diretório do script.
+
+if len(sys.argv) < 2:
+    print("Uso: python teste_uso.py <nome_do_arquivo.dat>")
+    sys.exit(1)
+
+arquivo = sys.argv[1] # Pega o nome do arquivo do primeiro argumento da linha de comando
 
 dados_gerais = {}
 required_nodes = []
@@ -617,7 +624,6 @@ def calcular_diametro(required_edges, non_required_edges, required_arcs, non_req
         # Verificar se todos os nós são alcançáveis a partir do nó inicial
         if float('inf') in distances.values() and num_nodes > 1:
             return 0 # Grafo não é conexo
-
     return max_dist
 
 # Calcular e imprimir o diâmetro
